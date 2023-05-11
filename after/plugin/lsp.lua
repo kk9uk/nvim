@@ -4,6 +4,7 @@ lsp.preset('recommended')
 local cmp = require('cmp')
 local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-Space>"] = cmp.mapping.complete(),
+    ["<Tab>"] = cmp.mapping.confirm({ select = true })
 })
 
 lsp.set_preferences({
