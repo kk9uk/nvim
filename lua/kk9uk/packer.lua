@@ -40,4 +40,6 @@ return require('packer').startup(function(use)
     }
 
     use 'nvim-treesitter/nvim-treesitter-context'
+
+    use 'ThePrimeagen/vim-be-good'
 end)
