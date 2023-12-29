@@ -18,3 +18,4 @@
     nvim ~/.config/nvim/lua/kk9uk/packer.lua
     :so
     :PackerSync
+    nvim
