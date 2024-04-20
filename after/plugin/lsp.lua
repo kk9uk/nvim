@@ -15,7 +15,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = { 'lua_ls', 'clangd', 'cmake', 'pyright', },
+    ensure_installed = { 'lua_ls', 'clangd', 'pyright', },
     handlers = {
         lsp_zero.default_setup,
     }
