@@ -1,7 +1,7 @@
 ## Usage
 > 0. Clean up
 
-    rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim;
+    rm -rf ~/.config/nvim && rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim
 
 > 1. Clone this
 
