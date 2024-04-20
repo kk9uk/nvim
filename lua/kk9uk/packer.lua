@@ -24,7 +24,6 @@ return require('packer').startup(function(use)
 
     use 'nvim-treesitter/nvim-treesitter-context'
 
-    use { "L3MON4D3/LuaSnip", run = "make install_jsregexp" }
     use {
           'VonHeikemen/lsp-zero.nvim',
           branch = 'v3.x',
@@ -36,6 +35,7 @@ return require('packer').startup(function(use)
                 -- Autocompletion
                 {'hrsh7th/nvim-cmp'},
                 {'hrsh7th/cmp-nvim-lsp'},
+                {'L3MON4D3/LuaSnip'},
           }
     }
 end)
