@@ -5,7 +5,7 @@
     rm -rf ~/.local/share/nvim;
     rm -rf ~/.local/state/nvim;
 
-> 1. Clone this to ***.config***
+> 1. Clone this
 
     git clone https://github.com/kk9uk/nvim.git ~/.config/nvim
 
