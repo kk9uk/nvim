@@ -9,6 +9,10 @@
 
     git clone https://github.com/kk9uk/nvim.git ~/.config/nvim
 
+> 2. Install [latest](https://medium.com/thelinux/the-correct-way-to-install-the-neovim-42f3076f9b88) Neovim
+
+    bash ~/.config/nvim/install.sh
+
 > 2. Install [packer.vim](https://github.com/wbthomason/packer.nvim)
 
     git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
