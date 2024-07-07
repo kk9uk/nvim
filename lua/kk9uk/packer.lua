@@ -41,4 +41,6 @@ return require('packer').startup(function(use)
                 {'hrsh7th/cmp-nvim-lsp'},
           }
     }
+
+    use 'ThePrimeagen/vim-be-good'
 end)
