@@ -19,17 +19,6 @@ local default_plugins = {
     },
 
     {
-        "zbirenbaum/nvterm",
-        init = function()
-            require("core.utils").load_mappings "nvterm"
-        end,
-        config = function(_, opts)
-            require "base46.term"
-            require("nvterm").setup(opts)
-        end,
-    },
-
-    {
         "NvChad/nvim-colorizer.lua",
         event = "User FilePost",
         config = function(_, opts)
@@ -226,21 +215,8 @@ local default_plugins = {
                 telescope.load_extension(ext)
             end
         end,
-    },
+    }
 
-    -- Only load whichkey after all the gui
-    {
-        "folke/which-key.nvim",
-        keys = { "<leader>", "<c-r>", "<c-w>", '"', "'", "`", "c", "v", "g" },
-        init = function()
-            require("core.utils").load_mappings "whichkey"
-        end,
-        cmd = "WhichKey",
-        config = function(_, opts)
-            dofile(vim.g.base46_cache .. "whichkey")
-            require("which-key").setup(opts)
-        end,
-    },
 }
 
 local config = require("core.utils").load_config()

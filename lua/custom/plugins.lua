@@ -68,11 +68,6 @@ local plugins = {
                 dapui.close()
             end
         end
-    },
-
-    {
-        "folke/which-key.nvim",
-        enabled = false
     }
 
 }
