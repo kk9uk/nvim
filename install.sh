@@ -9,6 +9,5 @@ curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod 755 nvim.appimage
 mv nvim.appimage $HOME/.local/bin/nvim
 
-# Install NVChad
-git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+# Let him cook.
 nvim
