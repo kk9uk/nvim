@@ -105,14 +105,14 @@ M.lspconfig = {
             "LSP implementation",
         },
 
-        ["<leader>ra"] = {
+        ["<leader>rn"] = {
             function()
                 require("nvchad.renamer").open()
             end,
             "LSP rename",
         },
 
-        ["<leader>ca"] = {
+        ["<leader>vca"] = {
             function()
                 vim.lsp.buf.code_action()
             end,
@@ -140,28 +140,28 @@ M.lspconfig = {
             "Goto next",
         },
 
-        ["<leader>q"] = {
+        ["<leader>d"] = {
             function()
                 vim.diagnostic.setloclist()
             end,
             "Diagnostic setloclist",
         },
 
-        ["<leader>wa"] = {
+        ["<leader>wsa"] = {
             function()
                 vim.lsp.buf.add_workspace_folder()
             end,
             "Add workspace folder",
         },
 
-        ["<leader>wr"] = {
+        ["<leader>wsr"] = {
             function()
                 vim.lsp.buf.remove_workspace_folder()
             end,
             "Remove workspace folder",
         },
 
-        ["<leader>wl"] = {
+        ["<leader>wsl"] = {
             function()
                 print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
             end,
@@ -188,14 +188,14 @@ M.telescope = {
 
     n = {
         -- find
-        ["<leader>fa"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find files" },
-        ["<leader>fw"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
-        ["<leader>fo"] = { "<cmd> Telescope oldfiles <CR>", "Find oldfiles" },
-        ["<leader>fz"] = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in current buffer" },
+        ["<leader>ff"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find files" },
+        ["<leader>rg"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
+        ["<leader>fr"] = { "<cmd> Telescope oldfiles <CR>", "Find recent files" },
+        ["<leader>fw"] = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in current buffer" },
 
         -- git
-        ["<leader>cm"] = { "<cmd> Telescope git_commits <CR>", "Git commits" },
-        ["<leader>gt"] = { "<cmd> Telescope git_status <CR>", "Git status" },
+        ["<leader>g#"] = { "<cmd> Telescope git_commits <CR>", "Git commits" },
+        ["<leader>g?"] = { "<cmd> Telescope git_status <CR>", "Git status" },
 
     },
 }
@@ -234,6 +234,7 @@ M.gitsigns = {
                 end
                 vim.schedule(function()
                     require("gitsigns").next_hunk()
+                    require("gitsigns").preview_hunk()
                 end)
                 return "<Ignore>"
             end,
@@ -248,6 +249,7 @@ M.gitsigns = {
                 end
                 vim.schedule(function()
                     require("gitsigns").prev_hunk()
+                    require("gitsigns").preview_hunk()
                 end)
                 return "<Ignore>"
             end,
@@ -256,18 +258,11 @@ M.gitsigns = {
         },
 
         -- Actions
-        ["<leader>rh"] = {
+        ["<leader>gr"] = {
             function()
                 require("gitsigns").reset_hunk()
             end,
             "Reset hunk",
-        },
-
-        ["<leader>ph"] = {
-            function()
-                require("gitsigns").preview_hunk()
-            end,
-            "Preview hunk",
         },
 
         ["<leader>gb"] = {
@@ -275,14 +270,8 @@ M.gitsigns = {
                 package.loaded.gitsigns.blame_line()
             end,
             "Blame line",
-        },
+        }
 
-        ["<leader>td"] = {
-            function()
-                require("gitsigns").toggle_deleted()
-            end,
-            "Toggle deleted",
-        },
     },
 }
 

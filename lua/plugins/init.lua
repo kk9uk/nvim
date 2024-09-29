@@ -215,6 +215,17 @@ local default_plugins = {
                 telescope.load_extension(ext)
             end
         end,
+    },
+
+    -- Only load whichkey after all the gui
+    {
+        "folke/which-key.nvim",
+        keys = { "<leader>" },
+        cmd = "WhichKey",
+        config = function(_, opts)
+            dofile(vim.g.base46_cache .. "whichkey")
+            require("which-key").setup(opts)
+        end,
     }
 
 }
