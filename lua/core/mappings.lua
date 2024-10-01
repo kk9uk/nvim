@@ -60,7 +60,7 @@ M.comment = {
     plugin = true,
 
     v = {
-        ["<leader>/"] = {
+        ["<C-_>"] = {
             "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
             "Toggle comment",
         },
