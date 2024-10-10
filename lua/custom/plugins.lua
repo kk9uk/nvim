@@ -1,14 +1,6 @@
 local plugins = {
 
     {
-        "jose-elias-alvarez/null-ls.nvim",
-        event = "VeryLazy",
-        opts = function()
-            return require "custom.configs.null-ls"
-        end
-    },
-
-    {
         "mfussenegger/nvim-dap",
         config = function (_, _)
             require("core.utils").load_mappings("dap")
