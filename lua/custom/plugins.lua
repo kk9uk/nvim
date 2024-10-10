@@ -1,26 +1,6 @@
 local plugins = {
 
     {
-        "williamboman/mason.nvim",
-        opts = {
-            ensure_installed = {
-                "lua-language-server",
-                "clangd",
-                "clang-format",
-                "codelldb"
-            }
-        }
-    },
-
-    {
-        "neovim/nvim-lspconfig",
-        config = function()
-            require "plugins.configs.lspconfig"
-            require "custom.configs.lspconfig"
-        end
-    },
-
-    {
         "jose-elias-alvarez/null-ls.nvim",
         event = "VeryLazy",
         opts = function()
