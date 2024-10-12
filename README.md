@@ -11,6 +11,8 @@
 
     ./.config/nvim/install.sh
 
-> 3. Let [him](https://github.com/folke/lazy.nvim) cook
+> 3. Reboot
+
+> 4. Let [him](https://github.com/folke/lazy.nvim) cook
 
     nvim
