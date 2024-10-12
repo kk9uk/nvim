@@ -40,7 +40,10 @@ M.capabilities.textDocument.completion.completionItem = {
     },
 }
 
-require("lspconfig").lua_ls.setup {
+-- LSP configs
+local lspconfig = require("lspconfig")
+
+lspconfig.lua_ls.setup {
     on_init = M.on_init,
     on_attach = M.on_attach,
     capabilities = M.capabilities,
@@ -64,11 +67,26 @@ require("lspconfig").lua_ls.setup {
     },
 }
 
-require("lspconfig").clangd.setup {
+lspconfig.clangd.setup {
     on_attach = function(client, bufnr)
         client.server_capabilities.signatureHelpProvider = false
         M.on_attach(client, bufnr)
-    end
+    end,
+    capabilities = M.capabilities
+}
+
+lspconfig.rust_analyzer.setup {
+    on_attach = M.on_attach,
+    capabilities = M.capabilities,
+    filetypes = { "rust" },
+    root_dir = require("lspconfig/util").root_pattern("Cargo.toml"),
+    settings = {
+        ["rust_analyzer"] = {
+            cargo = {
+                allFeatures = true
+            }
+        }
+    }
 }
 
 return M

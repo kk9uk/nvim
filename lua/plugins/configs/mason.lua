@@ -3,7 +3,8 @@ local options = {
         "lua-language-server", -- not an option from mason.nvim
         "clangd",
         "clang-format",
-        "codelldb"
+        "codelldb",
+        "rust-analyzer"
     },
 
     PATH = "skip",
