@@ -4,8 +4,7 @@ local options = {
         "clangd",
         "clang-format",
         "codelldb",
-        "rust-analyzer",
-        "rustfmt"
+        "rust-analyzer"
     },
 
     PATH = "skip",
