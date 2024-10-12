@@ -9,7 +9,7 @@
 
 > 2. Install [latest](https://medium.com/thelinux/the-correct-way-to-install-the-neovim-42f3076f9b88) Neovim
 
-    bash ~/.config/nvim/install.sh
+    ./.config/nvim/install.sh
 
 > 3. Let [him](https://github.com/folke/lazy.nvim) cook
 
