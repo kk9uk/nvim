@@ -229,7 +229,7 @@ local default_plugins = {
     },
 
     {
-        "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         event = "VeryLazy",
         opts = function()
             return require "plugins.configs.null-ls"
@@ -283,6 +283,16 @@ local default_plugins = {
         ft = "rust",
         init = function ()
             vim.g.rustfmt_autosave = 1
+        end
+    },
+
+    {
+        "mrcjkb/rustaceanvim",
+        version = "^4",
+        ft = { "rust" },
+        dependencies = "neovim/nvim-lspconfig",
+        config = function()
+            require("plugins.configs.rustaceanvim")
         end
     }
 

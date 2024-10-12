@@ -75,18 +75,4 @@ lspconfig.clangd.setup {
     capabilities = M.capabilities
 }
 
-lspconfig.rust_analyzer.setup {
-    on_attach = M.on_attach,
-    capabilities = M.capabilities,
-    filetypes = { "rust" },
-    root_dir = require("lspconfig/util").root_pattern("Cargo.toml"),
-    settings = {
-        ["rust_analyzer"] = {
-            cargo = {
-                allFeatures = true
-            }
-        }
-    }
-}
-
 return M
