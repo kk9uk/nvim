@@ -1,5 +1,5 @@
 local options = {
-    ensure_installed = { "lua", "vim", "vimdoc", "c", "cpp" },
+    ensure_installed = { "lua", "vim", "vimdoc", "c", "cpp", "rust" },
 
     highlight = {
         enable = true,
