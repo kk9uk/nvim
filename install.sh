@@ -11,4 +11,4 @@ chmod 755 nvim.appimage
 mv nvim.appimage $HOME/.local/bin/nvim
 
 # LSP dependencies
-sudo apt install python3.11-venv unzip -y
+sudo apt install python3.11-venv unzip ripgrep -y
