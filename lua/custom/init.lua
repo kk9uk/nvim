@@ -9,12 +9,12 @@ vim.opt.relativenumber = true
 -- Convert tabs to spaces
 vim.opt.expandtab = true
 -- Set the number of spaces that a <Tab> counts for while editing
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 -- Set the number of spaces that a <Tab> counts for while editing in insert mode
-vim.opt.softtabstop = 4
+vim.opt.softtabstop = 2
 
 -- Set the number of spaces to use for each step of (auto)indent
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 -- Enable smart indentation based on the context
 vim.opt.smartindent = true
 -- Disable line wrapping
