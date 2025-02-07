@@ -1,0 +1,38 @@
+" Disable GUI cursor settings (to use terminal cursor)
+set guicursor=
+
+" Show line numbers
+set number
+" Show relative line numbers (current line is 0, others are relative to it)
+set relativenumber
+
+" Convert tabs to spaces
+set expandtab
+" Set the number of spaces that a <Tab> counts for while editing
+set tabstop=4
+" Set the number of spaces that a <Tab> counts for while editing in insert mode
+set softtabstop=4
+
+" Set the number of spaces to use for each step of (auto)indent
+set shiftwidth=4
+" Enable smart indentation based on the context
+set smartindent
+" Disable line wrapping
+set nowrap
+
+" Disable highlighting of search results
+set nohlsearch
+" Enable incremental search (shows matches as you type)
+set incsearch
+
+" Set the time in milliseconds to wait before triggering the 'updatetime' event
+set updatetime=50
+
+" Move selected lines down in visual mode
+vnoremap J :m '>+1<CR>gv=gv
+
+" Move selected lines up in visual mode
+vnoremap K :m '<-2<CR>gv=gv
+
+" Disable the Q command in normal mode
+nnoremap Q <nop>
