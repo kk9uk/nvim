@@ -5,7 +5,7 @@
 
 > 1. Clone this
 
-    git clone https://github.com/kk9uk/nvim.git ~/.config/nvim
+    git clone https://github.com/kk9uk/nvim.git ./.config/nvim
 
 > 2. Install [latest](https://medium.com/thelinux/the-correct-way-to-install-the-neovim-42f3076f9b88) Neovim
 
