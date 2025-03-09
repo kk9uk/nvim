@@ -7,6 +7,7 @@ local options = {
         "cpp",
         "rust",
         "make",
+        "cmake"
     },
 
     highlight = {
