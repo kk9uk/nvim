@@ -1,0 +1,6 @@
+set relativenumber
+
+-- move down
+vmap J :m '>+1<CR>gv=gv
+-- move up
+vmap K :m '<-2<CR>gv=gv
